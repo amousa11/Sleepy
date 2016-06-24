@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B48ED8F1D1C6D0700E30837 /* ViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B48ED8E1D1C6D0700E30837 /* ViewControl.swift */; };
+		0B48ED911D1C6F2E00E30837 /* calculatedWakeUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B48ED901D1C6F2E00E30837 /* calculatedWakeUp.swift */; };
 		0BFA3D281D19E6ED00DF996E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA3D271D19E6ED00DF996E /* AppDelegate.swift */; };
 		0BFA3D2A1D19E6ED00DF996E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA3D291D19E6ED00DF996E /* ViewController.swift */; };
 		0BFA3D2D1D19E6ED00DF996E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BFA3D2B1D19E6ED00DF996E /* Main.storyboard */; };
@@ -14,7 +16,24 @@
 		0BFA3D321D19E6ED00DF996E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BFA3D301D19E6ED00DF996E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0B8E29751D1CD0ED00FC8D3A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0B48ED8E1D1C6D0700E30837 /* ViewControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControl.swift; sourceTree = "<group>"; };
+		0B48ED901D1C6F2E00E30837 /* calculatedWakeUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calculatedWakeUp.swift; sourceTree = "<group>"; };
+		0B8E29661D1CD0ED00FC8D3A /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		0B8E297B1D1CDEB600FC8D3A /* Sleepy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Sleepy.entitlements; sourceTree = "<group>"; };
 		0BFA3D241D19E6ED00DF996E /* Sleepy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sleepy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BFA3D271D19E6ED00DF996E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BFA3D291D19E6ED00DF996E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,10 +54,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B8E29651D1CD0ED00FC8D3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B8E29661D1CD0ED00FC8D3A /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0BFA3D1B1D19E6ED00DF996E = {
 			isa = PBXGroup;
 			children = (
 				0BFA3D261D19E6ED00DF996E /* Sleepy */,
+				0B8E29651D1CD0ED00FC8D3A /* Frameworks */,
 				0BFA3D251D19E6ED00DF996E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,9 +82,12 @@
 		0BFA3D261D19E6ED00DF996E /* Sleepy */ = {
 			isa = PBXGroup;
 			children = (
+				0B8E297B1D1CDEB600FC8D3A /* Sleepy.entitlements */,
 				0BFA3D271D19E6ED00DF996E /* AppDelegate.swift */,
 				0BFA3D291D19E6ED00DF996E /* ViewController.swift */,
+				0B48ED8E1D1C6D0700E30837 /* ViewControl.swift */,
 				0BFA3D2B1D19E6ED00DF996E /* Main.storyboard */,
+				0B48ED901D1C6F2E00E30837 /* calculatedWakeUp.swift */,
 				0BFA3D2E1D19E6ED00DF996E /* Assets.xcassets */,
 				0BFA3D301D19E6ED00DF996E /* LaunchScreen.storyboard */,
 				0BFA3D331D19E6ED00DF996E /* Info.plist */,
@@ -74,6 +105,7 @@
 				0BFA3D201D19E6ED00DF996E /* Sources */,
 				0BFA3D211D19E6ED00DF996E /* Frameworks */,
 				0BFA3D221D19E6ED00DF996E /* Resources */,
+				0B8E29751D1CD0ED00FC8D3A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -96,6 +128,12 @@
 				TargetAttributes = {
 					0BFA3D231D19E6ED00DF996E = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = L72278KK8K;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -135,8 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B48ED911D1C6F2E00E30837 /* calculatedWakeUp.swift in Sources */,
 				0BFA3D2A1D19E6ED00DF996E /* ViewController.swift in Sources */,
 				0BFA3D281D19E6ED00DF996E /* AppDelegate.swift in Sources */,
+				0B48ED8F1D1C6D0700E30837 /* ViewControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +289,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sleepy/Sleepy.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Sleepy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ali-Mousa.Sleepy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +304,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sleepy/Sleepy.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Sleepy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ali-Mousa.Sleepy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -286,6 +334,7 @@
 				0BFA3D381D19E6ED00DF996E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
