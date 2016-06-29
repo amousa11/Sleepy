@@ -9,12 +9,26 @@
 /* Begin PBXBuildFile section */
 		0B48ED8F1D1C6D0700E30837 /* ViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B48ED8E1D1C6D0700E30837 /* ViewControl.swift */; };
 		0B48ED911D1C6F2E00E30837 /* calculatedWakeUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B48ED901D1C6F2E00E30837 /* calculatedWakeUp.swift */; };
+		0B537D2D1D244774004DC1F7 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8E29661D1CD0ED00FC8D3A /* NotificationCenter.framework */; };
+		0B537D301D244774004DC1F7 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B537D2F1D244774004DC1F7 /* TodayViewController.swift */; };
+		0B537D331D244774004DC1F7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B537D311D244774004DC1F7 /* MainInterface.storyboard */; };
+		0B537D371D244774004DC1F7 /* SleepyExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0B537D2C1D244774004DC1F7 /* SleepyExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0BFA3D281D19E6ED00DF996E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA3D271D19E6ED00DF996E /* AppDelegate.swift */; };
 		0BFA3D2A1D19E6ED00DF996E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA3D291D19E6ED00DF996E /* ViewController.swift */; };
 		0BFA3D2D1D19E6ED00DF996E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BFA3D2B1D19E6ED00DF996E /* Main.storyboard */; };
 		0BFA3D2F1D19E6ED00DF996E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BFA3D2E1D19E6ED00DF996E /* Assets.xcassets */; };
 		0BFA3D321D19E6ED00DF996E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BFA3D301D19E6ED00DF996E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B537D351D244774004DC1F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BFA3D1C1D19E6ED00DF996E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B537D2B1D244774004DC1F7;
+			remoteInfo = SleepyExtension;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		0B8E29751D1CD0ED00FC8D3A /* Embed App Extensions */ = {
@@ -23,6 +37,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				0B537D371D244774004DC1F7 /* SleepyExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,6 +47,10 @@
 /* Begin PBXFileReference section */
 		0B48ED8E1D1C6D0700E30837 /* ViewControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControl.swift; sourceTree = "<group>"; };
 		0B48ED901D1C6F2E00E30837 /* calculatedWakeUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calculatedWakeUp.swift; sourceTree = "<group>"; };
+		0B537D2C1D244774004DC1F7 /* SleepyExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SleepyExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B537D2F1D244774004DC1F7 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		0B537D321D244774004DC1F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		0B537D341D244774004DC1F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B8E29661D1CD0ED00FC8D3A /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		0B8E297B1D1CDEB600FC8D3A /* Sleepy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Sleepy.entitlements; sourceTree = "<group>"; };
 		0BFA3D241D19E6ED00DF996E /* Sleepy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sleepy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +63,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0B537D291D244774004DC1F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B537D2D1D244774004DC1F7 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0BFA3D211D19E6ED00DF996E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -54,6 +81,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B537D2E1D244774004DC1F7 /* SleepyExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0B537D2F1D244774004DC1F7 /* TodayViewController.swift */,
+				0B537D311D244774004DC1F7 /* MainInterface.storyboard */,
+				0B537D341D244774004DC1F7 /* Info.plist */,
+			);
+			path = SleepyExtension;
+			sourceTree = "<group>";
+		};
 		0B8E29651D1CD0ED00FC8D3A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				0BFA3D261D19E6ED00DF996E /* Sleepy */,
+				0B537D2E1D244774004DC1F7 /* SleepyExtension */,
 				0B8E29651D1CD0ED00FC8D3A /* Frameworks */,
 				0BFA3D251D19E6ED00DF996E /* Products */,
 			);
@@ -75,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				0BFA3D241D19E6ED00DF996E /* Sleepy.app */,
+				0B537D2C1D244774004DC1F7 /* SleepyExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +137,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0B537D2B1D244774004DC1F7 /* SleepyExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B537D3A1D244774004DC1F7 /* Build configuration list for PBXNativeTarget "SleepyExtension" */;
+			buildPhases = (
+				0B537D281D244774004DC1F7 /* Sources */,
+				0B537D291D244774004DC1F7 /* Frameworks */,
+				0B537D2A1D244774004DC1F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SleepyExtension;
+			productName = SleepyExtension;
+			productReference = 0B537D2C1D244774004DC1F7 /* SleepyExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		0BFA3D231D19E6ED00DF996E /* Sleepy */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0BFA3D361D19E6ED00DF996E /* Build configuration list for PBXNativeTarget "Sleepy" */;
@@ -110,6 +166,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				0B537D361D244774004DC1F7 /* PBXTargetDependency */,
 			);
 			name = Sleepy;
 			productName = Sleepy;
@@ -126,6 +183,10 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Ali Mousa";
 				TargetAttributes = {
+					0B537D2B1D244774004DC1F7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = L72278KK8K;
+					};
 					0BFA3D231D19E6ED00DF996E = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = L72278KK8K;
@@ -151,11 +212,20 @@
 			projectRoot = "";
 			targets = (
 				0BFA3D231D19E6ED00DF996E /* Sleepy */,
+				0B537D2B1D244774004DC1F7 /* SleepyExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0B537D2A1D244774004DC1F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B537D331D244774004DC1F7 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0BFA3D221D19E6ED00DF996E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -169,6 +239,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0B537D281D244774004DC1F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B537D301D244774004DC1F7 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0BFA3D201D19E6ED00DF996E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -182,7 +260,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0B537D361D244774004DC1F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B537D2B1D244774004DC1F7 /* SleepyExtension */;
+			targetProxy = 0B537D351D244774004DC1F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		0B537D311D244774004DC1F7 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B537D321D244774004DC1F7 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		0BFA3D2B1D19E6ED00DF996E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -202,6 +296,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0B537D381D244774004DC1F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SleepyExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ali-Mousa.Sleepy.SleepyExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0B537D391D244774004DC1F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SleepyExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ali-Mousa.Sleepy.SleepyExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		0BFA3D341D19E6ED00DF996E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -292,6 +412,7 @@
 				CODE_SIGN_ENTITLEMENTS = Sleepy/Sleepy.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Sleepy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ali-Mousa.Sleepy";
@@ -307,6 +428,7 @@
 				CODE_SIGN_ENTITLEMENTS = Sleepy/Sleepy.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Sleepy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ali-Mousa.Sleepy";
@@ -318,6 +440,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0B537D3A1D244774004DC1F7 /* Build configuration list for PBXNativeTarget "SleepyExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B537D381D244774004DC1F7 /* Debug */,
+				0B537D391D244774004DC1F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		0BFA3D1F1D19E6ED00DF996E /* Build configuration list for PBXProject "Sleepy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

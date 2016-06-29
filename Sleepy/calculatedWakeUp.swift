@@ -21,7 +21,7 @@ class CalculatedWakeUp: UICollectionViewController{
         timeFormatter.dateFormat = "h:mm a"
         
         var calculatedDate = wakeUpDate
-        for _ in 1...6{
+        for _ in 1...8{
             //Calculates times to wake up
             calculatedDate = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.Minute, value: -90, toDate: calculatedDate, options: NSCalendarOptions.init(rawValue: 0))!
             let element = calculatedDate.descriptionWithLocale(NSTimeZone.description())
